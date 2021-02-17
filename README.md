@@ -1,15 +1,18 @@
 # Automation With Apps Script
+
+![Automation With Apps Script](https://github.com/benlcollins/automationWithAppsScript/blob/main/AppsScript_Automation_800.jpg)
+
 ## Automate tedious tasks and build killer applications using Google Sheets
 
 This GitHub folder contains code for the online course: [Automation With Apps Script](https://courses.benlcollins.com/p/automation-with-apps-script-master/)
-
-![Automation With Apps Script](https://github.com/benlcollins/automationWithAppsScript/blob/main/AppsScript_Automation_800.jpg)
 
 Save hours with Apps Script!
 
 Take your analysis skills and career to the next level with Apps Script.
 
-Be in high demand with clients. Get your pick of projects. Build fantastic Google Sheets-based applications that are impossible with formulas or add-ons alone.
+Be in high demand with clients. Get your pick of projects. 
+
+Build fantastic Google Sheets-based applications that are impossible with formulas or add-ons alone.
 
 ### Who is this course for?
 
