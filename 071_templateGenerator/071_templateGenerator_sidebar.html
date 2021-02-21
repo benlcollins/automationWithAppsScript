@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+
+    <?!= include('Stylesheet') ?>
+
+  </head>
+  <body>
+
+    <p>
+      Please enter your details:
+    </p>
+
+    <form id="templateForm" onSubmit="handleFormSubmit(this)">
+      
+      <div class="block">
+        <label for="projectName">Project Name:</label><br>
+        <input type="text" name="projectName" id="projectName">
+      </div>
+
+      <div class="block">
+        <input type="checkbox" name="generateContract" id="generateContract">
+        <label for="generateContract">Contract</label>
+      </div>
+
+      <div class="block">
+        <input type="Submit" class="create" value="GENERATE TEMPLATE">
+        <input type="button" value="Close" onclick="google.script.host.close()" />
+      </div>
+      
+    </form>
+
+    <?!= include('Javascript') ?>
+
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<script>
+
+  function handleFormSubmit(formObject) {
+
+    // run apps script server side function
+    google.script.run.createTemplate(formObject);
+
+    // close the sidebar after submit with a 1s delay
+    setTimeout(google.script.host.close,1000);
+
+  }
+</script>
