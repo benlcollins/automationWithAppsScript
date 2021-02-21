@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+
+    <?!= include('Stylesheet') ?>
+
+  </head>
+  <body>
+
+    <p>
+      Please enter your details:
+    </p>
+
+    <form id="templateForm" onSubmit="handleFormSubmit(this)">
+      
+      <label for="projectName">Project Name:</label>
+      <input type="text" name="projectName" id="projectName">
+
+      <input type="Submit" class="create" value="GENERATE TEMPLATE">
+      <input type="button" value="Close" onclick="google.script.host.close()" />
+    </form>
+
+    <?!= include('Javascript') ?>
+
+  </body>
+</html>
