@@ -1,6 +1,6 @@
 # Automation With Apps Script
 
-![Automation With Apps Script](https://github.com/benlcollins/automationWithAppsScript/blob/main/AppsScript_Automation_800.jpg)
+![Automation With Apps Script](https://github.com/benlcollins/automationWithAppsScript/blob/main/assets/AppsScript_Automation_800.jpg)
 
 ## Automate tedious tasks and build killer applications using Google Sheets
 
