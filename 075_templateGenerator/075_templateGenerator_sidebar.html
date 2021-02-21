@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+
+    <?!= include('Stylesheet') ?>
+
+  </head>
+  <body>
+
+    <div id="success">
+
+    <p>
+      Please enter your details:
+    </p>
+
+    <form id="templateForm" onSubmit="handleFormSubmit(this)">
+      
+      <div class="block">
+        <label for="projectName">Project Name:</label><br>
+        <input type="text" name="projectName" id="projectName" class="width100">
+      </div>
+
+      <br><hr><br>
+
+      <div class="block">
+        <label for="clientName">Client Name:</label><br>
+        <input type="text" name="clientName" id="clientName" class="width100">
+      </div>
+
+      <div class="block">
+        <label for="clientAddress">Client Address:</label><br>
+        <input type="text" name="clientAddress" id="clientAddress" class="width100">
+      </div>
+
+      <div class="block">
+        <label for="contactName">Contact Name:</label><br>
+        <input type="text" name="contactName" id="contactName" class="width100">
+      </div>
+
+      <div class="block">
+        <label for="contactPhone">Contact Phone:</label><br>
+        <input type="text" name="contactPhone" id="contactPhone" class="width100">
+      </div>
+
+      <div class="block">
+        <label for="contactEmail">Contact Email:</label><br>
+        <input type="text" name="contactEmail" id="contactEmail" class="width100">
+      </div>
+
+      <br><hr>
+
+      <p>Additional documents?</p>
+
+      <div class="block">
+        <input type="checkbox" name="generateContract" id="generateContract">
+        <label for="generateContract">Contract</label>
+      </div>
+
+      <br><hr><br>
+      
+      <div class="block">
+        <input type="Submit" class="create" value="GENERATE TEMPLATE">
+        <input type="button" value="Close" onclick="google.script.host.close()" />
+      </div>
+      
+    </form>
+
+    </div>
+    
+    <?!= include('Javascript') ?>
+
+  </body>
+</html>

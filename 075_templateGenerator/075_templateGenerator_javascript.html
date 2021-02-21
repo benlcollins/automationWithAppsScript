@@ -1,0 +1,27 @@
+<script>
+  // function to run when form is submitted
+  function handleFormSubmit(formObject) {
+
+    // run apps script server side function
+    google.script.run.withSuccessHandler(sayThankYou)
+      .createTemplate(formObject);
+
+    // close the sidebar after submit with a 1s delay
+    //setTimeout(google.script.host.close,1000);
+
+  }
+
+  // callback function for success
+  function sayThankYou(value) {
+
+    // add a success note to the sidebar
+    const div = document.getElementById("success");
+
+    // add the success message
+    div.innerHTML = `Success!<br><br>
+      Project created successfully: ` + value.name + `<br><br>
+      <a href="` + value.folderUrl + `" target="_blank">Click here to access new folder</a><br><br>
+      <input type="button" value="Close" onclick="google.script.host.close()" />`;
+
+  }
+</script>
