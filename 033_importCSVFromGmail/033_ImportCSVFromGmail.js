@@ -59,7 +59,7 @@ function importCSVFromGmail() {
         else if (attachment.getContentType() === 'application/vnd.ms-excel' || attachment.getContentType() === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') {
 
           // remove the .xlsx or .xls 
-          const resource = {title: file.getName().replace(/.xlsx?/, "")};
+          const resource = {title: attachment.getName().replace(/.xlsx?/, "")};
 
           // convert the excel file to a new Google Sheet
           Drive.Files.insert(
